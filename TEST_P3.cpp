@@ -14,7 +14,7 @@ std::string printToStringParamNameCharPtr(const ::testing::TestParamInfo<const c
 
 TEST_P(FooTest, Bar) {
 
-    ASSERT_EQ("Hello", GetParam());
+    ASSERT_EQ("Hello111", GetParam());
 }
 
 INSTANTIATE_TEST_CASE_P(HardCodedStrings, FooTest, ::testing::Values("Hello", "World") , printToStringParamNameCharPtr );
